@@ -6,8 +6,16 @@ public class Graph {
     private int V; // Number of vertices
     private ArrayList<Edge>[] adjList; // Adjacency list representation of graph
 
+    public int getV() {
+        return V;
+    }
+
+    public ArrayList<Edge>[] getAdjList() {
+        return adjList;
+    }
+
     // Inner class to represent an edge with a weight
-    class Edge {
+    public class Edge {
         int destination;
         int weight;
 
